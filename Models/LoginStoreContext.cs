@@ -42,7 +42,7 @@ namespace StudentMIS.Models {
             
             MySqlConnection connection = GetConnection();
             connection.Open();
-            string query = "select * from teacherdata where username=@val1";
+            string query = "select * from login where username=@val1 and password=@val2 and role=\"teacher\"";
             MySqlCommand cmd= new MySqlCommand(query,connection);
 
             cmd.Parameters.AddWithValue("@val1",username);

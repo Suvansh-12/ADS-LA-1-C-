@@ -33,7 +33,7 @@ namespace StudentMIS.Models {
                 stu.id=reader.GetString(2);
                 stu.courseId=reader.GetInt32(3);
                 stu.semester=reader.GetInt32(4);
-                stu.year=reader.GetInt32(5);
+                stu.year= reader.GetInt32(4);
             }
             return stu;
         }
